@@ -1,0 +1,40 @@
+{
+  "name": "@openbnb/feedback-memory",
+  "description": "Reusable traveler-feedback memory helpers for listing recommendation systems.",
+  "type": "module",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "OpenBnB (https://openbnb.org)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenlabSimon/feedback-memory.git"
+  },
+  "homepage": "https://github.com/OpenlabSimon/feedback-memory",
+  "bugs": {
+    "url": "https://github.com/OpenlabSimon/feedback-memory/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "shx rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "shx": "^0.3.4",
+    "typescript": "^5.8.2"
+  }
+}
