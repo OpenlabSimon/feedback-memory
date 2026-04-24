@@ -28,6 +28,25 @@ This repository is intended to stand on its own:
 - publish with `npm publish`
 - or consume it from another project as a normal npm package
 
+## Install From GitHub
+
+The repository includes committed `dist/` output so GitHub dependency installs
+do not need a local build step.
+
+```bash
+npm install github:OpenlabSimon/feedback-memory
+```
+
+Or in `package.json`:
+
+```json
+{
+  "dependencies": {
+    "@openbnb/feedback-memory": "github:OpenlabSimon/feedback-memory"
+  }
+}
+```
+
 ## Example
 
 ```ts
@@ -43,4 +62,5 @@ import {
 
 - The package intentionally depends only on Node built-ins and `node:sqlite`.
 - Consumers are expected to provide their own listing shape; the package only requires the feedback-relevant fields.
+- `dist/` is checked into git on purpose so GitHub installs can resolve `main` and `types` immediately.
 - License: MIT. See `LICENSE`.
