@@ -1,5 +1,8 @@
 # @openbnb/feedback-memory
 
+[![Verify Dist](https://github.com/OpenlabSimon/feedback-memory/actions/workflows/verify-dist.yml/badge.svg)](https://github.com/OpenlabSimon/feedback-memory/actions/workflows/verify-dist.yml)
+[![Publish](https://github.com/OpenlabSimon/feedback-memory/actions/workflows/publish.yml/badge.svg)](https://github.com/OpenlabSimon/feedback-memory/actions/workflows/publish.yml)
+
 Reusable traveler-feedback memory helpers.
 
 ## What is in this package
